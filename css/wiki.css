@@ -201,7 +201,6 @@ li {
 /* ── Images ── */
 
 figure.wiki-image {
-  display: table;
   float: right;
   clear: right;
   margin: 0.5em 0 1em 1.5em;
