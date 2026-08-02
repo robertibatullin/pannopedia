@@ -211,6 +211,18 @@ figure.wiki-image {
   max-width: 320px;
 }
 
+/* Each row is its own block-formatting context, so figures in it float and
+   clear only against each other, never against images in other rows — an
+   image always starts level with its own paragraph, never pushed down by
+   an earlier, taller image elsewhere in the article still being cleared. */
+.wiki-image-row {
+  display: flow-root;
+}
+
+.wiki-image-row figure.wiki-image {
+  margin-top: 0;
+}
+
 figure.wiki-image img {
   display: block;
   max-width: 100%;
